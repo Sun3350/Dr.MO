@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "DrMo",
+    "slug": "DrMo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Logos.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f7961e"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sunisaac.DrMo"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Logos.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sunisaac.DrMo"
+    },
+    "web": {
+      "favicon": "./assets/Logos.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "05883c88-002a-4990-ba91-ddcffaa65ba5"
+      }
+    }
+  }
+}
