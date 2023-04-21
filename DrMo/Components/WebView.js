@@ -19,7 +19,6 @@ export default function WebScreen() {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      marginTop: 30,
     },
    offlineContainer:{
       flex: 1,
