@@ -5,7 +5,7 @@ import NetInfo from '@react-native-community/netinfo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 export const LastVisitedUrlContext = React.createContext();
-export default function WebScreen() {
+export default function WebinerScreen() {
   const webViewRef = useRef(null)
   const [offline, setOffline] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -56,7 +56,7 @@ export default function WebScreen() {
      zIndex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#000000',
+      backgroundColor: '#000',
     },
    
   });
@@ -176,9 +176,9 @@ useEffect(() => {
             onLoadStart={() => setIsLoading(true)}
             onLoadEnd={end}
             cacheEnabled={true}
-            cacheMode={'LOAD_CACHE_ELSE_NETWORK'}
             domStorageEnabled={true}
             javaScriptEnabled={true}
+            cacheMode={'LOAD_CACHE_ELSE_NETWORK'}
             onNavigationStateChange={onNavigationStateChange}
           />
           </LastVisitedUrlContext.Provider>

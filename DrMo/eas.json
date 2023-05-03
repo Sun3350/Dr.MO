@@ -3,13 +3,17 @@
     "version": ">= 3.9.3"
   },
   "build": {
+    "release": {
+      "channel": "production"
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal",
       "ios": {
         "resourceClass": "m-medium"
-      }
+      } 
     },
+    
     "preview": {
       "android": {
         "buildType": "apk"
