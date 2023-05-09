@@ -8,7 +8,7 @@ export const Footer = () => {
 
   return (
     <View style={styles.footer}>
-       <TouchableOpacity  onPress={() => navigation.navigate("Homes")}>
+       <TouchableOpacity style={styles.footerbutton} onPress={() => navigation.navigate("Homes")}>
          <Ionicons
              style={styles.footericon}
               name="home-sharp"
@@ -41,7 +41,9 @@ const styles = StyleSheet.create({
     footerText:{
         color:'green',
         fontSize:15,
-        fontWeight:'bold'
+        fontWeight:'bold',
+        alignSelf:'center',
+        
     },
     footerbutton:{
         justifyContent:'center',

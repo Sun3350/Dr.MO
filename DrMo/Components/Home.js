@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, ImageBackground,Animated} from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, ImageBackground,Animated, ScrollView} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 export default function HomeScreen({navigation}) {
   const [fadeInOpacity] = useState(new Animated.Value(0));
@@ -39,19 +39,21 @@ export default function HomeScreen({navigation}) {
   const fadeIn3 = () => {
     Animated.timing(fadeInOpacity3, {
       toValue: 1,
-      duration: 2000,
+      duration: 4000,
       useNativeDriver: true,
     }).start();
   };
   const fadeIn4 = () => {
     Animated.timing(fadeInOpacity4, {
       toValue: 1,
-      duration: 2000,
+      duration: 5000,
       useNativeDriver: true,
     }).start();
   };
+
+  
   return (
-   
+   <ScrollView>
     <View style={styles.container}>
      <Animated.View style={{ opacity: fadeInOpacity }}>
      <ImageBackground
@@ -97,12 +99,12 @@ export default function HomeScreen({navigation}) {
        <View style={styles.webna} >
        <TouchableOpacity style={styles.webnabutton} onPress={() => navigation.navigate("Webiner")}>
            <Text style={styles.webinerText} >
-                  Webiners
+                  Webinar
                  </Text>
                  <TouchableOpacity  style={styles.webnacamera} onPress={() => navigation.navigate("Webiner")}>
                  <Ionicons
            style={styles.camera}
-           name="camera"
+           name="videocam"
         size={40}
       /></TouchableOpacity>
       <View style={styles.downwebn}>
@@ -115,11 +117,14 @@ export default function HomeScreen({navigation}) {
            </TouchableOpacity>
        </View>
        </Animated.View>
-       <View style={{flexDirection:'row'}}>
+       <Animated.View style={{ opacity: fadeInOpacity4}}>
+       <View style={styles.newsbox} >
         <Text style={styles.newsText}>NewsUpdates</Text><Text style={styles.newsTextd}>.....</Text>
+       
        </View>
+       </Animated.View>
         </View>
-        
+        </ScrollView>
   );
 }
 
@@ -202,10 +207,11 @@ const styles = StyleSheet.create({
     marginTop: 10,
     alignItems:'center',
     justifyContent: 'center',
-    width: '100%',
+    alignSelf:'center',
+    width: '87%',
   },
   webnabutton:{
-    width:"87%",
+    width:"100%",
     height: '100%',
     backgroundColor: '#f7961e',
     alignItems:'center',
@@ -224,15 +230,26 @@ const styles = StyleSheet.create({
   camera:{
     color:'white'
   },
+  newsbox:{
+    height: 150,
+    marginTop: 10,
+    marginBottom:20,
+    borderRadius: 5,
+    alignSelf:'center',
+    width: '87%',
+    flexDirection:'row',
+    backgroundColor:'#f7961e'
+  },
   newsText:{
     color:'white',
     fontSize:35,
     fontWeight:800,
-    marginTop:20
+    marginTop:20,
+    marginLeft:5
   },
   newsTextd:{
-    color:'#f7961e',
-    fontSize:35,
+    color:'green',
+    fontSize:30,
     fontWeight:800,
     marginTop:20
   },

@@ -19,12 +19,17 @@
       "bundleIdentifier": "com.sunisaac.DrMo"
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/Logos.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.sunisaac.DrMo"
     },
+    "plugins": [
+      "@react-native-firebase/app"
+      
+    ],
     "web": {
       "favicon": "./assets/Logos.png"
     },

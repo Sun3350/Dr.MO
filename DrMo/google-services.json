@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "873794528263",
+    "project_id": "drmo-e008e",
+    "storage_bucket": "drmo-e008e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873794528263:android:8d404dc72fb40f2b2476a2",
+        "android_client_info": {
+          "package_name": "com.sunisaac.DrMo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873794528263-c4d02ub2tvo34mhf316gtckhh48o68gs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunisaac.DrMo",
+            "certificate_hash": "ab6fe328c5d38de0b3ce22c5118d23322a860519"
+          }
+        },
+        {
+          "client_id": "873794528263-lc7im57n91jdvun1oqag59bt2461v0sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSQthykwN_j_mXtrnI2x_iyobyWDlgz4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873794528263-lc7im57n91jdvun1oqag59bt2461v0sa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

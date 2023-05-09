@@ -169,7 +169,7 @@ useEffect(() => {
           <LastVisitedUrlContext.Provider value={lastVisitedUrl}>
           <WebView
           style={{ flex: 1 }}
-            source={{  uri: lastVisitedUrl || 'http://loja.ng/' }}
+            source={{  uri: lastVisitedUrl || 'http://drmakanjuolaojewumi.com.preview.my-hosting-panel.com/ebook/' }}
             ref={webViewRef}
             originWhitelist={['*']}
             onError={() => setOffline(true)} 
